@@ -29,7 +29,24 @@ function generatePassword() {
       if (numbers) {
         possibleCharacters= possibleCharacters.concat(numberCharater)
       }
-      //here (replicate lines 27-31//)
+
+      var specialCharater= ['!', '+', '&', '$', '?', '@', '#', '^', ','];
+      var Special=confirm('Would you like special characters in your password?');
+      if (Special) {
+        possibleCharacters= possibleCharacters.concat(specialCharater)
+      }
+
+      var uppercaseCharater= ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+      var uppercase=confirm('Would you like uppercase characters in your password?');
+      if (uppercase) {
+        possibleCharacters= possibleCharacters.concat(uppercaseCharater)
+      }
+      var lowercaseCharater= ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+      var lowercaseCharater=confirm('Would you like lowercase characters in your password?');
+      if (lowercaseCharater) {
+        possibleCharacters= possibleCharacters.concat(lowercaseCharater)
+      }
+      
       var finalPassword= ""
 
       for(i=0;i<passwordLength;i++) {
