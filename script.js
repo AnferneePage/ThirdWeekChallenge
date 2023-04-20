@@ -42,8 +42,8 @@ function generatePassword() {
         possibleCharacters= possibleCharacters.concat(uppercaseCharater)
       }
       var lowercaseCharater= ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-      var lowercaseCharater=confirm('Would you like lowercase characters in your password?');
-      if (lowercaseCharater) {
+      var lowercase=confirm('Would you like lowercase characters in your password?');
+      if (lowercase) {
         possibleCharacters= possibleCharacters.concat(lowercaseCharater)
       }
       
