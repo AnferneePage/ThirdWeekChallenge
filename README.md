@@ -3,7 +3,7 @@ This is a simple password generator webpage that allows you to generate strong a
 
 #How to Use
 1. Open the webpage in your browser link below:
-https://anferneepage.github.io/PasswordGenerator/
+(https://latrellpage.github.io/PasswordGenerator/)
 2. Click the red button "Generate password"
 3. You then will be asked a series of questions to determine your criteria of your password. Simply hit "ok" for yes and "cancel for no.
 4. After you have entered the criteria of your password, your password will generate and display in the text box below.
